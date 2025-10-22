@@ -1,0 +1,92 @@
+@use 'utils/fonts';
+@use 'utils/colors';
+
+.hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  &__text{
+    width: 50%;
+  }
+
+  &__title{
+   font-size: fonts.$h1-size;
+   line-height: fonts.$h1-line;
+   font-weight: 600;
+   white-space: pre-line;
+   margin-bottom: 20px;
+  }
+
+  &__descr{
+    font-size: fonts.$body-size;
+    line-height: fonts.$body-line;
+    margin-bottom: 30px;
+  }
+
+  &__btn{
+    padding: 20px 50px;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item{
+    width: 150px;
+  }
+
+  &__num{
+    font-family: fonts.$ff-space;
+    font-size: fonts.$h4-size;
+    line-height: fonts.$h4-line;
+    font-weight: 600;
+  }
+
+  &__descr{
+    font-size: fonts.$descr-size;
+    line-height: fonts.$descr-line;;
+  }
+
+  &__card{
+    max-width: 510px;
+    max-height: 510px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__nft{
+    border-radius: 20px 20px 0 0;
+  }
+
+  &__footer{
+    padding: 22px 20px;
+    background-color: colors.$bg-secondary;
+    border-radius: 0 0 20px 20px;
+  }
+
+  &__name{
+    font-weight: 600;
+    font-size: fonts.$h5-size;
+    line-height: fonts.$h5-line;
+    margin-bottom: 10px;
+  }
+  
+  &__avatar{
+    margin-right: 12px;
+    max-width: 24px;
+    max-height: 24px;
+  }
+
+  &__user{
+    display: flex;
+    align-items: center;
+    font-size: fonts.$base-size;
+    line-height: fonts.$base-line;
+  }
+}

@@ -3,19 +3,14 @@
 
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body{
-  margin: 0;
-  padding: 0;
-
   background-color: colors.$bg;
 
-  font-family: fonts.$font-family;
+  font-family: fonts.$ff-work;
   color: colors.$text;
 }
 
-.container{
-  width: 1050px;
-  margin: auto;
-}

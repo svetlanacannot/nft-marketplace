@@ -1,0 +1,28 @@
+@use 'utils/colors';
+@use 'utils/fonts';
+
+.container{
+  width: 1050px;
+  margin: auto;
+}
+
+.block{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.button{
+    padding: 19px 30px;
+    border-radius: 20px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+
+    background-color: colors.$call-to-action;
+    font-size: fonts.$base-size;
+    line-height: fonts.$base-line;;
+    color: colors.$text;
+    text-decoration: none;
+}
