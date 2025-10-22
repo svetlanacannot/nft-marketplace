@@ -1,0 +1,30 @@
+@use 'utils/colors';
+@use 'utils/fonts';
+
+.header{
+  max-width: 1280px;
+  width: 1280px;
+  padding: 20px 50px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link{
+    margin-right: 30px;
+    margin-left: 30px;
+
+    text-decoration: none;
+    color: colors.$text;
+
+    font-size: fonts.$base-size;
+    line-height: fonts.$base-line;
+
+    cursor: pointer;
+
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+}
